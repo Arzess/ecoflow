@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Arsenii Malyshko" />
+    <meta name="description" content="Ecoflow site for portfolio" />
+    <meta name="keywords" content="ecoflow, generators, solarpanels" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Ecoflow</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container container-header" tabindex="-1">
+        <nav class="nav">
+          <!-- Ecoflow logo -->
+          <svg
+            width="140"
+            height="15"
+            viewBox="0 0 140 15"
+            class="ecoflow-pc-logo"
+          >
+            <defs>
+              <filter id="a">
+                <feColorMatrix
+                  in="SourceGraphic"
+                  values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"
+                ></feColorMatrix>
+              </filter>
+            </defs>
+            <path
+              d="M16.816 2.494H0V.004h16.816v2.49zm-.024 6.225H0v-2.49h16.792v2.49zm0 3.735v2.49H0v-2.49h16.792zm18.13-9.94l-5.994.013c-4.011-.008-5.897 1.645-5.897 4.947 0 3.306 1.886 4.96 5.889 4.96h8.406v2.481l-8.394.013c-5.599.008-8.398-2.466-8.398-7.43 0-4.96 2.779-7.445 8.337-7.465h8.455v2.486l-2.404-.005zM49.4.037c5.636 0 8.456 2.477 8.456 7.437 0 4.96-2.795 7.445-8.394 7.454-5.599.008-8.394-2.466-8.394-7.43-.004-4.955 2.77-7.445 8.333-7.461zm5.934 7.437c0-3.302-1.877-4.955-5.876-4.947-4.011-.008-5.864 1.645-5.864 4.947 0 3.306 1.853 4.96 5.856 4.96 4.003.004 5.884-1.65 5.884-4.96zm82.262-7.45l.005 12.401h-4.803V.02h-2.404v12.405h-4.803V0h-2.403v14.936h14.416c1.8 0 2.396-.956 2.396-2.47V.02h-2.404v.004zm-38.66 12.414H86.32a1.794 1.794 0 0 1-1.792-1.792V.012h-2.403v11.295c0 2 1.62 3.62 3.62 3.62h13.192v-2.49zM110.978.037c5.636 0 8.455 2.477 8.455 7.437 0 4.96-2.795 7.445-8.394 7.454-5.598.008-8.394-2.466-8.394-7.43-.004-4.955 2.775-7.445 8.333-7.461zm5.934 7.437c0-3.302-1.878-4.955-5.877-4.947-4.011-.008-5.864 1.645-5.864 4.947 0 3.306 1.853 4.96 5.856 4.96 4.003.004 5.885-1.65 5.885-4.96zM62.135 0h16.517v2.36H62.135zm16.517 8.773H64.495v6.171h-2.36V6.293h16.517z"
+              fill="#212121"
+              filter="url(#a)"
+            ></path>
+          </svg>
+          <!-- Header elements -->
+          <!-- <ul class="header-menu"> -->
+          <!-- <li class="header-menu-element"><a href="#">Contacts</a></li> -->
+          <!-- </ul> -->
+        </nav>
+        <div class="media">
+          <ul class="ul-media">
+            <li class="header-menu-media-element">
+              <a
+                href="https://www.instagram.com/ecoflowtech/?hl=en"
+                target="_blank"
+                class="link"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="#fff"
+                  class="instagram-logo"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header-menu-media-element">
+              <a
+                href="https://twitter.com/EcoFlowTech"
+                target="_blank"
+                class="link"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="#fff"
+                  viewBox="0 0 512 512"
+                >
+                  <title>ionicons-v5_logos</title>
+                  <path
+                    d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Page content -->
+    <main class="main">
+      <!-- Hero section -->
+      <div class="hero section">
+        <div class="container">
+          <h1 class="hero-title">POWER NEVER HAS BEEN THIS EASY</h1>
+          <button class="hero-button">
+            <a href="#start" class="hero-button-link link">Learn more</a>
+          </button>
+          <!-- Slider -->
+        </div>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <!-- First slide -->
+            <img
+              src="https://cdn.shopify.com/s/files/1/1996/9707/files/20230110-112608.png?v=1673321375"
+              alt=""
+              id="slide"
+            />
+            <!-- Second slide -->
+            <img
+              src="https://cdn.shopify.com/s/files/1/1996/9707/files/mm100_3x_ac74de38-1078-4d07-83a1-0a9d2091a475.png?v=1668500254"
+              alt=""
+              id="slide1"
+            />
+            <!-- Third slide -->
+            <img
+              src="https://cdn.shopify.com/s/files/1/1996/9707/files/20230118-174810.png?v=1674035310"
+              alt=""
+              id="slide2"
+            />
+          </div>
+          <div class="slider-nav">
+            <a href="#slide"></a><a href="#slide1"></a><a href="#slide2"></a>
+          </div>
+        </div>
+      </div>
+      <div class="section delta-section">
+        <div class="container">
+          <h2 id="start" class="hidden" style="text-align: center">Delta</h2>
+          <h2 class="section-title">DELTA</h2>
+          <h3 class="section-subtitle">NEVER LOSE POWER AGAIN.</h3>
+          <p>
+            Stay in charge of any situation with the EcoFlow DELTA. A single
+            unit packs a 1.2kWh capacity, perfect for powering mutiple
+            essentials devices for hours on end during a blackout.
+          </p>
+          <img
+            src="https://cdn.shopify.com/s/files/1/1996/9707/products/ecoflow-ecoflow-delta-max-portable-power-station-30045804953673_1066x.png?v=1667531449"
+            alt="delta ecoflow"
+            class="delta-section-img"
+          />
+          <h4 class="section-sub-subtitle">1800W</h4>
+          <!-- <h4 class="section-sub-subtitle-outline">1800W</h4> -->
+          <h5 class="section-mini-title">AC OUTPUT</h5>
+          <!-- Iframe video -->
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/uyB6HaquXvo"
+            title="YouTube video player"
+            frameborder="0"
+            class="delta-iframe"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="section river-pro-section">
+        <div class="container">
+          <h2 class="section-title" style="color: var(--light-text-color)">
+            RIVER PRO
+          </h2>
+          <h3 class="section-subtitle">HIT THE OUTDOORS</h3>
+          <p>
+            Take on the great outdoors with the EcoFlow RIVER Pro. This portable
+            powerhouse comes in at 16.8lbs and packs a 720Wh capacity. Double up
+            to 1440Wh with an extra battery whenever you need more juice for the
+            long haul.
+          </p>
+          <h4 class="section-sub-subtitle">FOR LIFE ON THE GO.</h4>
+          <div class="outdoor-img">
+            <img
+              src="https://drone.ua/wp-content/EcoflowUkraine/images/image69.jpg"
+              alt="outdoor image ecoflow river pro"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="section solar-panel-section">
+        <div class="container">
+          <h2 hidden>Portable Solar Panels</h2>
+          <h2 class="section-title">ECOFLOW 160W PORTABLE SOLAR PANEL</h2>
+          <p>
+            Be in charge wherever you are. The EcoFlow 160W Solar Panel delivers
+            ample and green power on the go.
+          </p>
+          <ul class="solar-panel-list">
+            <li class="solar-panel-list-element">Portable & self-supporting</li>
+            <li class="solar-panel-list-element">Smart solar power</li>
+            <li class="solar-panel-list-element">
+              Durable with IP68 waterproof rating
+            </li>
+            <li class="solar-panel-list-element">One-piece folding design</li>
+          </ul>
+          <img
+            src="https://cdn.shopify.com/s/files/1/1996/9707/products/ecoflow-ecoflow-160w-portable-solar-panel-30045747544137_2000x.png?v=1667530378"
+            alt="ecoflow portable solar panel 160w"
+            class="solar-panel-section-img"
+          />
+        </div>
+      </div>
+      <div class="section intersection">
+        <div class="container">
+          <div class="intersection-element">></div>
+        </div>
+      </div>
+      <div class="section products-showcase-section">
+        <div class="container">
+          <h2 id="product-section" hidden>Product section</h2>
+          <h2 class="section-title">Our products</h2>
+          <!-- Products list -->
+          <ul class="products-list">
+            <li class="products-item">
+              <a href="https://us.ecoflow.com/collections/delta-series/products/delta-max-portable-power-station" class="link" target="_blank"
+                ><img
+                  src="https://cdn.shopify.com/s/files/1/1996/9707/products/ecoflow-ecoflow-delta-max-portable-power-station-30045804920905_1066x.png?v=1667531459"
+                  alt="ecoflow delta max product"
+                  width="360"
+                  height="360"
+                />
+                <div class="product-desc">
+                  <h2 class="section-subtitle">Delta Max</h2>
+                  <p class="product-price">USD $1,799.00</p>
+                </div></a
+              >
+            </li>
+            <li class="products-item">
+              <a href="https://us.ecoflow.com/collections/river-series/products/river-pro-portable-power-station" class="link" target="_blank">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/1996/9707/products/ecoflow-ecoflow-river-pro-portable-power-station-30042800783433_1500x.png?v=1667470052"
+                  alt="ecoflow river pro product"
+                  width="360"
+                  height="360"
+                />
+                <div class="product-desc">
+                  <h2 class="section-subtitle">River PRO</h2>
+                  <p class="product-price">USD $529.00</p>
+                </div>
+              </a>
+            </li>
+            <li class="products-item">
+              <a href="https://us.ecoflow.com/collections/portable-solar-panels/products/160w-portable-solar-panel" class="link" target="_blank"
+                ><img
+                  src="https://cdn.shopify.com/s/files/1/1996/9707/products/ecoflow-ecoflow-160w-portable-solar-panel-30045747511369_1066x.png?v=1667530386"
+                  alt="ecoflow 160w portable solar panel product"
+                  width="360"
+                  height="360"
+                />
+                <div class="product-desc">
+                  <h2 class="section-subtitle">EcoFlow 160W Portable</h2>
+                  <p class="product-price">USD $349.00</p>
+                </div></a
+              >
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="section contact-section">
+        <div class="container">
+          <h2 class="section-title">HAVE YOU GOT ANY QUESTIONS?</h2>
+          <h3 class="section-subtitle">
+            We will accompany you in any question!
+          </h3>
+          <p>
+            You can either fill in this form on the right, or write us an
+            e-mail. We are looking forward to seeing your feedback.
+          </p>
+          <div class="contact-form">
+            <div class="form-container">
+              <h3 class="section-subtitle-copy">FORM</h3>
+            </div>
+            <form action="" method="get" class="form">
+              <input type="text" placeholder="Your name.." class="name-input" />
+              <input
+                type="text"
+                placeholder="Your surname.."
+                class="surname-input"
+              />
+              <input
+                type="e-mail"
+                placeholder="example@domain.com"
+                class="e-mail-input"
+              />
+              <textarea
+                class="textarea-input"
+                cols="10"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <input type="submit" value="OK" class="submit-input" />
+            </form>
+          </div>
+        </div>
+        <video id="ecoflow-bg-video" autoplay muted loop>
+          <source src="./videos/eocflow-video-bg.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </main>
+    <a href="#" class="link arrow-up"></a>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container container-footer">
+        <!-- Ecoflow logo -->
+        <nav class="nav">
+          <svg
+            width="140"
+            height="15"
+            viewBox="0 0 140 15"
+            class="ecoflow-pc-logo"
+          >
+            <defs>
+              <filter id="a">
+                <feColorMatrix
+                  in="SourceGraphic"
+                  values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"
+                ></feColorMatrix>
+              </filter>
+            </defs>
+            <path
+              d="M16.816 2.494H0V.004h16.816v2.49zm-.024 6.225H0v-2.49h16.792v2.49zm0 3.735v2.49H0v-2.49h16.792zm18.13-9.94l-5.994.013c-4.011-.008-5.897 1.645-5.897 4.947 0 3.306 1.886 4.96 5.889 4.96h8.406v2.481l-8.394.013c-5.599.008-8.398-2.466-8.398-7.43 0-4.96 2.779-7.445 8.337-7.465h8.455v2.486l-2.404-.005zM49.4.037c5.636 0 8.456 2.477 8.456 7.437 0 4.96-2.795 7.445-8.394 7.454-5.599.008-8.394-2.466-8.394-7.43-.004-4.955 2.77-7.445 8.333-7.461zm5.934 7.437c0-3.302-1.877-4.955-5.876-4.947-4.011-.008-5.864 1.645-5.864 4.947 0 3.306 1.853 4.96 5.856 4.96 4.003.004 5.884-1.65 5.884-4.96zm82.262-7.45l.005 12.401h-4.803V.02h-2.404v12.405h-4.803V0h-2.403v14.936h14.416c1.8 0 2.396-.956 2.396-2.47V.02h-2.404v.004zm-38.66 12.414H86.32a1.794 1.794 0 0 1-1.792-1.792V.012h-2.403v11.295c0 2 1.62 3.62 3.62 3.62h13.192v-2.49zM110.978.037c5.636 0 8.455 2.477 8.455 7.437 0 4.96-2.795 7.445-8.394 7.454-5.598.008-8.394-2.466-8.394-7.43-.004-4.955 2.775-7.445 8.333-7.461zm5.934 7.437c0-3.302-1.878-4.955-5.877-4.947-4.011-.008-5.864 1.645-5.864 4.947 0 3.306 1.853 4.96 5.856 4.96 4.003.004 5.885-1.65 5.885-4.96zM62.135 0h16.517v2.36H62.135zm16.517 8.773H64.495v6.171h-2.36V6.293h16.517z"
+              fill="#212121"
+              filter="url(#a)"
+            ></path>
+          </svg>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

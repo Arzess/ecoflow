@@ -1,0 +1,959 @@
+/* Manrope font import */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+/* Monsterrat font import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+:root {
+  /* Font root section */
+  --primary-font: "Manrope", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+  /* Font root section end */
+  /* Text color section */
+  --light-text-color: #fff;
+  --header-light-text-color-base: rgb(222, 222, 222);
+  --header-light-text-color-hover: #fdfdfd;
+  --main-text-color: rgb(34, 82, 155);
+  --description-text-color: #333334;
+  --dark-text-color: rgb(0, 0, 0);
+  /* Text color section end */
+  /* Background colors */
+  --header-section-color-bg: rgb(34, 82, 155);
+  --button-color-bg: rgb(248, 180, 68);
+  --button-color-bg-hover-focus: rgb(222, 222, 222);
+  --light-color-bg: rgb(255, 255, 255);
+  --hero-section-color-bg: rgba(110, 184, 100, 1);
+  --shadow-bg-color: rgba(64, 64, 64, 0.333);
+  /* Background colors section end */
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+embed,
+main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+caption,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+source {
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+@keyframes float-x {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+.section {
+  padding: 100px 0;
+}
+.container {
+  width: 1226px;
+  margin: 0 auto;
+}
+.link {
+  text-decoration: none;
+}
+p {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  text-align: justify;
+}
+/* Header styles */
+.header {
+  background-color: var(--header-section-color-bg);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav .header-menu {
+  list-style-type: none;
+  gap: 60px;
+  display: flex;
+  margin-left: 60px;
+}
+.hidden {
+  visibility: hidden;
+}
+.media {
+  margin-left: auto;
+}
+
+.media .ul-media {
+  list-style-type: none;
+  gap: 60px;
+  display: flex;
+}
+.header-menu .header-menu-element a {
+  text-decoration: none;
+  color: var(--header-light-text-color-base);
+  font-family: var(--secondary-font);
+}
+
+.header-menu .header-menu-element a:hover {
+  color: var(--header-light-text-color-hover);
+  transition: 0.3s;
+}
+/* Hero section styles */
+.hero {
+  /* background-color: var(--hero-section-color-bg); */
+  padding-bottom: 76px;
+  padding-top: 76px;
+  height: 600px;
+}
+
+.hero-img {
+  width: 1000px;
+  position: absolute;
+  right: -100px;
+  top: -90px;
+  filter: drop-shadow(5px 5px 5px var(--shadow-bg-color));
+  /* animation: 4s ease infinite float-y paused; */
+}
+
+.hero-title {
+  color: var(--light-text-color);
+  font-family: var(--primary-font);
+  font-size: 50px;
+  width: 400px;
+  /* filter: drop-shadow(0px 0px 11px 0px #444); */
+  text-align: left;
+  left: 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+.hero-title,
+.hero-button {
+  z-index: 1;
+}
+/* Slider */
+.slider-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  bottom: 400px;
+}
+.slider {
+  display: flex;
+  overflow-x: hidden;
+  aspect-ratio: 1440/400;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+  scroll-margin-bottom: 200px;
+}
+.slider-nav {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 75%;
+  background-color: var(--header-light-text-color-base);
+  opacity: 50%;
+  overflow-anchor: auto;
+}
+.slider-nav a::selection {
+  opacity: 100%;
+  transition: opacity ease 0.3s;
+}
+.slider-nav a:hover {
+  background-color: var(--light-color-bg);
+  transition: 0.3s;
+  opacity: 100%;
+}
+.hero-button {
+  border-radius: 25px;
+  font-family: var(--secondary-font);
+  border: 0;
+  background-color: var(--button-color-bg);
+  margin-top: 20px;
+  padding: 23px;
+  margin-left: 30px;
+  display: flex;
+  position: relative;
+}
+.hero-button-link {
+  color: var(--dark-text-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-color-bg-hover-focus);
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 25px 0px var(--button-color-bg-hover-focus);
+  -moz-box-shadow: 0px 0px 25px 0px var(--button-color-bg-hover-focus);
+  box-shadow: 0px 0px 25px 0px var(--button-color-bg-hover-focus);
+}
+/* Delta Section */
+
+.section-title {
+  font-size: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--main-text-color);
+  margin: 0;
+  margin-bottom: 60px;
+}
+/* .section-title::before { */
+/* content: "{"; */
+/* margin-right: 10px; */
+/* color: var(--main-text-color); */
+/* } */
+/* .section-title::after { */
+/* content: "}"; */
+/* margin-left: 10px; */
+/* color: var(--main-text-color); */
+/* } */
+.section {
+  overflow: hidden;
+}
+
+.delta-section {
+  padding-bottom: 200px;
+  padding-top: 200px;
+  /* height: auto; */
+}
+.delta-section .section-subtitle {
+  font-size: 60px;
+  left: 143px;
+  width: 50px;
+  letter-spacing: 0.3em;
+  color: var(--main-text-color);
+  position: relative;
+}
+.delta-section p {
+  width: 300px;
+  position: relative;
+  left: 143px;
+  top: 72px;
+  margin-bottom: 60px;
+  line-height: 1.45em;
+}
+.delta-section-img {
+  width: 1000px;
+  position: relative;
+  margin-right: auto;
+  bottom: 750px;
+  margin-left: 424px;
+  filter: drop-shadow(5px 5px 5px var(--shadow-bg-color));
+}
+
+.delta-section .section-sub-subtitle {
+  position: relative;
+  font-size: 140px;
+  bottom: 850px;
+  margin-left: 707px;
+  color: var(--main-text-color);
+}
+.delta-section .section-mini-title {
+  position: relative;
+  margin-left: 766px;
+  bottom: 830px;
+  color: var(--description-text-color);
+  font-size: 70px;
+}
+
+.delta-section .section-sub-subtitle-outline {
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  -webkit-text-stroke-width: 2px;
+  font-size: 500px;
+  z-index: -1;
+  bottom: 0px;
+  filter: blur(6px);
+}
+/* River Pro section */
+.river-pro-section {
+  background-color: var(--header-section-color-bg);
+  padding-bottom: 200px;
+  padding-top: 200px;
+  height: 1130px;
+}
+.delta-iframe {
+  width: 1226px;
+  position: absolute;
+  height: 720px;
+  top: 2200px;
+  -webkit-box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+  -moz-box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+  box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+}
+.river-pro-section p {
+  margin-bottom: 60px;
+  line-height: 1.45em;
+  color: var(--light-text-color);
+  width: 408px;
+  top: 30px;
+  position: relative;
+  margin-left: 700px;
+}
+
+.river-pro-section .outdoor-img {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 30px;
+  bottom: 525px;
+  /* z-index: -1; */
+  position: relative;
+  -webkit-box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+  -moz-box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+  box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+}
+.river-pro-section .outdoor-img img {
+  width: 1100px;
+  height: 550px;
+  position: relative;
+  right: 294px;
+  bottom: 45px;
+}
+.river-pro-section .section-subtitle {
+  font-size: 50px;
+  color: var(--light-text-color);
+  position: relative;
+  margin-left: 700px;
+}
+
+.river-pro-section .section-sub-subtitle {
+  position: relative;
+  font-size: 70px;
+  color: var(--light-text-color);
+  margin-left: 700px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.1em;
+  width: 400px;
+}
+/* Solar panel section */
+.solar-panel-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  height: 1100px;
+}
+
+.solar-panel-section .solar-panel-section-img {
+  width: 900px;
+  position: relative;
+  margin-left: 450px;
+  bottom: 400px;
+  filter: drop-shadow(5px 5px 5px var(--shadow-bg-color));
+}
+.solar-panel-section .solar-panel-list {
+  position: relative;
+  width: 400px;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+.solar-panel-section .solar-panel-list .solar-panel-list-element {
+  margin: 5px;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+}
+.solar-panel-section p {
+  width: 450px;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+/* Intersection */
+.intersection .container .intersection-element {
+  margin: 0 auto;
+  text-align: center;
+}
+.intersection-element {
+  font-size: 80px;
+  width: auto;
+  font-family: var(--primary-font);
+  color: var(--main-text-color);
+  animation: 3s ease infinite float-x;
+}
+.intersection-element::before {
+  content: ">";
+  color: var(--main-text-color);
+}
+.intersection-element::after {
+  content: ">";
+  color: var(--main-text-color);
+}
+
+/* Product showcase section */
+.products-showcase-section {
+  background-color: var(--header-section-color-bg);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.products-showcase-section .section-title {
+  color: var(--light-text-color);
+}
+.products-showcase-section .products-list {
+  list-style-type: none;
+  gap: 55px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.products-showcase-section .products-list .products-item {
+  -webkit-box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+  -moz-box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+  box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+  padding: 6px;
+  background-color: var(--light-color-bg);
+  border-radius: 20px;
+}
+.products-showcase-section .products-list .products-item img {
+  background-color: var(--header-light-text-color-hover);
+  -webkit-box-shadow: inset 0px -29px 27px -45px var(--shadow-bg-color);
+  -moz-box-shadow: inset 0px -29px 27px -45px var(--shadow-bg-color);
+  box-shadow: inset 0px -29px 27px -45px var(--shadow-bg-color);
+}
+.products-showcase-section .products-list .products-item .product-desc {
+  /* border-top: 2px solid #333334; */
+  background-color: var(--header-light-text-color-hover);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.products-showcase-section
+  .products-list
+  .products-item
+  .product-desc
+  .section-subtitle {
+  color: var(--main-text-color);
+  font-size: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.products-showcase-section
+  .products-list
+  .products-item
+  .product-desc
+  .product-price {
+  color: var(--main-text-color);
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Contact section styles */
+
+.contact-section {
+  /* background-color: var(--light-color-bg); */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  height: 1200px;
+}
+.contact-section #ecoflow-bg-video {
+  width: 140%;
+  height: 140%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  top: -15px;
+  right: -15px;
+  filter: blur(7px);
+}
+.contact-section p {
+  position: relative;
+  width: 400px;
+  color: var(--light-text-color);
+}
+.contact-section .section-subtitle {
+  margin-top: 150px;
+}
+
+.contact-section .contact-form {
+  position: relative;
+  width: 400px;
+  left: 650px;
+  bottom: 384px;
+  background-color: var(--light-color-bg);
+  padding-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+  -moz-box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+  box-shadow: 0px 0px 24px 0px var(--shadow-bg-color);
+}
+.contact-section .contact-form .form-container {
+  /* background-color: var(--header-section-color-bg); */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.contact-section .contact-form {
+  border-radius: 20px;
+}
+.animate {
+  animation-play-state: running;
+}
+
+.float-x-animation {
+  animation: 10s ease infinite float-x;
+}
+.contact-section .contact-form h3 {
+  font-size: 30px;
+  font-family: var(--secondary-font);
+  color: var(--main-text-color);
+  text-align: center;
+}
+.contact-section .contact-form .form input {
+  margin: 20px;
+  padding: 10px;
+  filter: drop-shadow(5px 5px 5px var(--shadow-bg-color));
+  border-radius: 4px;
+  border: 0;
+}
+.textarea-input {
+  margin: 20px;
+  padding: 10px;
+  filter: drop-shadow(5px 5px 5px var(--shadow-bg-color));
+  border: 0;
+}
+.form {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contact-section .contact-form .form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section .contact-form input[type="submit"]:hover,
+.contact-section .contact-form input[type="submit"]:focus {
+  transition: 0.3s;
+  color: var(--light-text-color);
+  background: var(--header-section-color-bg);
+}
+.contact-section .section-subtitle {
+  font-size: 50px;
+  margin-bottom: 15px;
+  width: 450px;
+  color: var(--main-text-color);
+}
+.contact-section .contact-form .form label {
+  margin: 3px;
+}
+.submit-input {
+  color: var(--main-text-color);
+  background-color: var(--light-color-bg);
+}
+/* Footer styles */
+.footer {
+  background-color: var(--header-section-color-bg);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Adaptive design section */
+
+/* L Laptop screens */
+/* 1440x--- */
+@media screen and (max-width: 1440px) {
+  .container {
+    width: calc(1440px - 226px);
+  }
+  .slider-nav{
+    bottom: 40px;
+  }
+  .slider-wrapper {
+    bottom: 333px;
+  }
+  .slider {
+    aspect-ratio: 1440/525;
+  }
+  .products-showcase-section .products-list {
+    gap: 49px;
+  }
+}
+
+/* Laptop screens */
+/* 1024x--- */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: calc(1024px - 226px);
+  }
+  .slider {
+    aspect-ratio: 1440/736;
+  }
+  .slider img{
+    width: 1530px;
+    height: 540px;
+  }
+  .slider #slide{
+    left: 300px;
+    position: relative;
+  }
+  .products-showcase-section .products-list {
+    gap: 49px;
+    justify-content: center;
+  }
+  .contact-section .contact-form {
+    left: 470px;
+  }
+  .delta-section img {
+    width: 749px;
+    margin-left: 235px;
+    bottom: 705px;
+  }
+  .delta-section p,
+  .delta-section .section-subtitle {
+    left: 0px;
+  }
+  .delta-section .section-sub-subtitle {
+    margin-left: 333px;
+  }
+  .delta-section .section-mini-title {
+    margin-left: 393px;
+    width: 400px;
+  }
+  .delta-iframe {
+    top: 1942px;
+    width: calc(1024px - 226px);
+  }
+  .river-pro-section .section-subtitle,
+  .river-pro-section .section-sub-subtitle,
+  .river-pro-section p {
+    margin-left: 450px;
+  }
+  .river-pro-section .outdoor-img {
+    width: 400px;
+    height: 400px;
+    bottom: 532px;
+  }
+  .river-pro-section .outdoor-img img {
+    width: 900px;
+    height: 450px;
+    right: 247px;
+  }
+  .solar-panel-section p,
+  .solar-panel-section .solar-panel-list {
+    margin-left: 0;
+  }
+  .solar-panel-section .solar-panel-section-img {
+    width: 700px;
+    margin-left: 316px;
+  }
+}
+/* Tablet screens */
+/* 768x--- */
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(768px - 226px);
+  }
+  .slider {
+    aspect-ratio: 1440/990;
+  }
+  .slider img{
+    width: 1330px;
+    height: 520px;
+  }
+  .slider #slide{
+    left: 0;
+    position: relative;
+  }
+  .products-showcase-section .products-list {
+    gap: 49px;
+    justify-content: center;
+  }
+  .contact-section .contact-form {
+    left: 300px;
+    width: 300px;
+    bottom: 485px;
+  }
+  .delta-section img {
+    width: 600px;
+    margin-left: 180px;
+    bottom: 650px;
+  }
+  .delta-section p,
+  .delta-section .section-subtitle {
+    left: 0px;
+  }
+  .delta-section .section-sub-subtitle {
+    margin-left: 315px;
+    font-size: 90px;
+    bottom: 800px;
+
+  }
+  .delta-section .section-mini-title {
+    margin-left: 350px;
+    font-size: 45px;
+    width: 400px;
+    bottom: 815px;  
+  }
+  .delta-iframe {
+    top: 1720px;
+    width: calc(768px - 226px);
+  }
+  .river-pro-section .section-subtitle,
+  .river-pro-section .section-sub-subtitle,
+  .river-pro-section p {
+    margin-left: 330px;
+  }
+  .river-pro-section .outdoor-img {
+    width: 300px;
+    height: 300px;
+    bottom: 500px;
+  }
+  .river-pro-section .outdoor-img img {
+    width: 700px;
+    height: 350px;
+    right: 195px;
+  }
+  .river-pro-section p{
+    width: 280px;
+  }
+  .river-pro-section .section-sub-subtitle{
+    font-size: 60px;
+  }
+  .solar-panel-section p,
+  .solar-panel-section .solar-panel-list {
+    margin-left: 0;
+    width: 300px;
+  }
+  .solar-panel-section .solar-panel-section-img {
+    width: 580px;
+    margin-left: 160px;
+    margin-top: -12px;
+  }
+  .solar-panel-section{
+    height: 1200px;
+  }
+  .contact-section .section-subtitle{
+    width: 175px;
+    text-align: justify;
+  }
+  .contact-section p{
+    width: 275px;
+  }
+}
+/* Mobile screens */
+/* 425x--- */
+@media screen and (max-width: 425px) {
+  .container{
+    width: calc(500px - 226px);
+  }
+  .delta-iframe{
+    width: calc(500px - 226px);
+    height: 300px;
+    top: 1990px;
+  }
+  .delta-section .section-sub-subtitle{
+    margin-left: 145px;
+    font-size: 45px;
+    bottom: 790px;  
+  }
+  .media .ul-media{
+    gap: 30px;
+    flex-direction: column;
+  }
+  .slider{
+    aspect-ratio: 1440/1780;
+  }
+  .slider img{
+    width: 300px;
+  }
+  .hero .hero-title{
+    font-size: 27px;
+    width: 200px;
+  }
+  .hero .hero-button{
+    padding: 15px;
+    font-size: 15px;
+  }
+  .delta-section .section-subtitle{
+    font-size: 35px;
+  }
+  .delta-section p{
+    width: 200px;
+  }
+  .delta-section img{
+    width: 400px;
+    margin-left: 0px;
+    bottom: 690px;
+  }
+  .delta-section p{
+    margin-top: 250px;
+  }
+  .delta-section .section-title{
+    font-size: 60px;
+  }
+  .river-pro-section .section-title{
+    font-size: 60px;
+  }
+  .solar-panel-section .section-title{
+    font-size: 60px;
+  }  
+  .products-showcase-section .section-title{
+    font-size: 70px;
+  }
+  .contact-section .section-title{
+    font-size: 50px;
+  }
+  .contact-section .section-subtitle{
+    font-size: 23px;
+    width: 110px;
+  }
+  .contact-section p{
+    font-size: 15px;
+    width: 100px;
+  }
+  .contact-section .contact-form{
+    left: 125px;
+    width: 200px;
+    bottom: 450px;
+  }
+  .delta-section .section-mini-title{
+    margin-left: 123px;
+    bottom: 800px;
+    font-size: 30px;
+  }
+  .solar-panel-section p, .solar-panel-section .solar-panel-list{
+    width: 180px;
+  }
+  .solar-panel-section .solar-panel-section-img{
+    margin-left: -150px;
+  }  
+  .solar-panel-section .solar-panel-list{
+    top: 280px;
+  }
+  .solar-panel-section{
+    height: 1350px;
+  }
+  .river-pro-section{
+    height: 1500px;
+  }
+  .river-pro-section .section-subtitle{
+    margin-left: 0;
+  }
+  .river-pro-section .section-sub-subtitle, .river-pro-section p{
+    top: 390px;
+    margin-left: 15px;
+
+  }
+}
