@@ -6,4 +6,4 @@ The main topic of the site is Ecoflow products.
 
 ----oOo----
 
-I do not own the images and source on my page, all the rights go to Ecoflow.
+I do not own the images and source on my page, all the rights go to the Ecoflow.
