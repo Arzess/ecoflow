@@ -775,6 +775,7 @@ p {
   .container {
     width: calc(100vw - 226px);
   }
+  
   .slider {
     aspect-ratio: 1440/990;
   }
@@ -860,6 +861,10 @@ p {
   .contact-section p {
     width: 275px;
   }
+  .header{
+    position: relative;
+    z-index: 9999;
+  }
   /* Hamburger menu */
   .burger {
     display: grid !important;
@@ -877,11 +882,6 @@ p {
     border-radius: 30px;
     transition: 0.5s;
   }
-
-  .main {
-    position: relative;
-    z-index: -2;
-  }
   .media .ul-media {
     display: grid;
     position: absolute;
@@ -890,13 +890,22 @@ p {
     top: 82px;
     gap: 0;
     left: 0;
-    z-index: -1;
+    z-index: -2;
     transform: translateY(-100%);
     transition: 0.5s;
     justify-items: center;
     /* width: 100px; */
   }
-
+  .overflow-container{
+    display: flex;
+    height: 89px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background-color: var(--header-section-color-bg);
+  }
   .media .ul-media .header-menu-media-element {
     /* padding-right: 49%; */
     /* padding-left: 49%; */
@@ -904,11 +913,6 @@ p {
     padding-bottom: 20px;
     justify-content: center;
     /* background-color: var(--header-section-darker-color-bg); */
-  }
-  .header-hover-element:hover {
-    transition: 0.3s;
-    background-color: var(--light-color-bg);
-    color: var(--main-text-color);
   }
   /* When input is checked the "burger menu" goes down to its original position */
   input#burger-menu:checked ~ .container .media .ul-media {
@@ -1072,6 +1076,12 @@ p {
   .products-showcase-section .products-item img {
     width: 200px;
     height: 200px;
+  }
+  .slider{
+    aspect-ratio: 1440/2500;
+  }
+  .slider img{
+    height: 650px;
   }
   .products-showcase-section
     .products-list
