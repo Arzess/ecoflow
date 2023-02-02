@@ -1,4 +1,4 @@
-# ecoflow
+# Ecoflow
 
 
 This is project I made for my porfolio. My website contains adaptive design on pair with an accurate, minimalistic and urban design, made in azure and white colors. 
