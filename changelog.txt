@@ -11,6 +11,7 @@ Base version of Ecoflow site for my portfolio.
 -Added "hamburger menu"
 -Fixed some bugs
 -Expanded adaptive design for following devices: M Mobile Screens.
+-Fixed "unclickable" links on the devices that have a "hamburger menu".
 
 Author's notice:
 In this version I've made some changes to adaptive design of this site, to be precise I made an extra resolution for the M Mobile screens, plus added a hamburger menu. 
