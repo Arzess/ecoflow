@@ -18,6 +18,7 @@
   /* Text color section end */
   /* Background colors */
   --header-section-color-bg: rgb(34, 82, 155);
+  --header-section-darker-color-bg: rgb(28, 69, 129);
   --button-color-bg: rgb(248, 180, 68);
   --button-color-bg-hover-focus: rgb(222, 222, 222);
   --light-color-bg: rgb(255, 255, 255);
@@ -150,6 +151,9 @@ q:after {
   content: "";
   content: none;
 }
+input#burger-menu {
+  display: none;
+}
 .section {
   padding: 100px 0;
 }
@@ -170,6 +174,7 @@ p {
   background-color: var(--header-section-color-bg);
   padding-top: 32px;
   padding-bottom: 32px;
+  border-bottom: 1px solid var(--header-section-darker-color-bg);
 }
 .container-header {
   display: flex;
@@ -197,15 +202,20 @@ p {
   gap: 60px;
   display: flex;
 }
-.header-menu .header-menu-element a {
+.media .header-menu-media-element a {
   text-decoration: none;
   color: var(--header-light-text-color-base);
   font-family: var(--secondary-font);
 }
 
-.header-menu .header-menu-element a:hover {
+.ecoflow-pc-logo:hover {
+  filter: drop-shadow(0px 0px 20px var(--light-color-bg));
+  transition: 0.3s;
+}
+.media .header-menu-media-element a:hover {
   color: var(--header-light-text-color-hover);
   transition: 0.3s;
+  filter: drop-shadow(0px 0px 20px var(--light-color-bg));
 }
 /* Hero section styles */
 .hero {
@@ -677,7 +687,7 @@ p {
   .container {
     width: calc(1440px - 226px);
   }
-  .slider-nav{
+  .slider-nav {
     bottom: 40px;
   }
   .slider-wrapper {
@@ -700,11 +710,11 @@ p {
   .slider {
     aspect-ratio: 1440/736;
   }
-  .slider img{
+  .slider img {
     width: 1530px;
-    height: 540px;
+    height: 520px;
   }
-  .slider #slide{
+  .slider #slide {
     left: 300px;
     position: relative;
   }
@@ -768,11 +778,11 @@ p {
   .slider {
     aspect-ratio: 1440/990;
   }
-  .slider img{
+  .slider img {
     width: 1330px;
     height: 520px;
   }
-  .slider #slide{
+  .slider #slide {
     left: 0;
     position: relative;
   }
@@ -798,13 +808,12 @@ p {
     margin-left: 315px;
     font-size: 90px;
     bottom: 800px;
-
   }
   .delta-section .section-mini-title {
     margin-left: 350px;
     font-size: 45px;
     width: 400px;
-    bottom: 815px;  
+    bottom: 815px;
   }
   .delta-iframe {
     top: 1720px;
@@ -825,10 +834,10 @@ p {
     height: 350px;
     right: 195px;
   }
-  .river-pro-section p{
+  .river-pro-section p {
     width: 280px;
   }
-  .river-pro-section .section-sub-subtitle{
+  .river-pro-section .section-sub-subtitle {
     font-size: 60px;
   }
   .solar-panel-section p,
@@ -841,119 +850,209 @@ p {
     margin-left: 160px;
     margin-top: -12px;
   }
-  .solar-panel-section{
+  .solar-panel-section {
     height: 1200px;
   }
-  .contact-section .section-subtitle{
+  .contact-section .section-subtitle {
     width: 175px;
     text-align: justify;
   }
-  .contact-section p{
+  .contact-section p {
     width: 275px;
   }
+  /* Hamburger menu */
+  .burger {
+    display: grid !important;
+  }
+  .burger {
+    display: none;
+    height: min-content;
+    cursor: pointer;
+  }
+  .burger .burger-layer {
+    width: 20px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: var(--light-color-bg);
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+
+  .main {
+    position: relative;
+    z-index: -2;
+  }
+  .media .ul-media {
+    display: grid;
+    position: absolute;
+    background-color: var(--header-section-color-bg);
+    width: 100%;
+    top: 82px;
+    gap: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: 0.5s;
+    justify-items: center;
+    /* width: 100px; */
+  }
+
+  .media .ul-media .header-menu-media-element {
+    padding-right: 49%;
+    padding-left: 49%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    background-color: var(--header-section-darker-color-bg);
+  }
+  .header-hover-element:hover {
+    transition: 0.3s;
+    background-color: var(--light-color-bg);
+    color: var(--main-text-color);
+  }
+  .media .ul-media .social{
+    padding-right: 50%;
+    padding-left: 50%;
+  }
+  /* When input is checked the "burger menu" goes down to its original position */
+  input#burger-menu:checked ~ .container .media .ul-media {
+    transform: translateY(0);
+  }
+  input#burger-menu:checked ~ .container .media .burger .burger-layer:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+  }
+
+  input#burger-menu:checked ~ .container .media .burger .burger-layer:nth-child(2) {
+    display: none;
+  }
+
+  input#burger-menu:checked ~ .container .media .burger .burger-layer:nth-child(3) {
+    transform: rotate(-45deg);
+  }
 }
-/* Mobile screens */
+/* L Mobile screens */
 /* 425x--- */
 @media screen and (max-width: 425px) {
-  .container{
+  .container {
     width: calc(500px - 226px);
   }
-  .delta-iframe{
+  .delta-iframe {
     width: calc(500px - 226px);
     height: 300px;
     top: 1990px;
   }
-  .delta-section .section-sub-subtitle{
+  .delta-section .section-sub-subtitle {
     margin-left: 145px;
     font-size: 45px;
-    bottom: 790px;  
+    bottom: 790px;
   }
-  .media .ul-media{
-    gap: 30px;
-    flex-direction: column;
-  }
-  .slider{
+  .slider {
     aspect-ratio: 1440/1780;
   }
-  .slider img{
+  .slider img {
     width: 300px;
   }
-  .hero .hero-title{
+  .hero .hero-title {
     font-size: 27px;
     width: 200px;
   }
-  .hero .hero-button{
+  .hero .hero-button {
     padding: 15px;
     font-size: 15px;
   }
-  .delta-section .section-subtitle{
+  .delta-section .section-subtitle {
     font-size: 35px;
   }
-  .delta-section p{
+  .delta-section p {
     width: 200px;
   }
-  .delta-section img{
+  .delta-section img {
     width: 400px;
     margin-left: 0px;
     bottom: 690px;
   }
-  .delta-section p{
+  .delta-section p {
     margin-top: 250px;
   }
-  .delta-section .section-title{
+  .delta-section .section-title {
     font-size: 60px;
   }
-  .river-pro-section .section-title{
+  .river-pro-section .section-title {
     font-size: 60px;
   }
-  .solar-panel-section .section-title{
+  .solar-panel-section .section-title {
     font-size: 60px;
-  }  
-  .products-showcase-section .section-title{
+  }
+  .products-showcase-section .section-title {
     font-size: 70px;
   }
-  .contact-section .section-title{
+  .contact-section .section-title {
     font-size: 50px;
   }
-  .contact-section .section-subtitle{
+  .contact-section .section-subtitle {
     font-size: 23px;
     width: 110px;
   }
-  .contact-section p{
+  .contact-section p {
     font-size: 15px;
     width: 100px;
   }
-  .contact-section .contact-form{
+  .contact-section .contact-form {
     left: 125px;
     width: 200px;
     bottom: 450px;
   }
-  .delta-section .section-mini-title{
+  .delta-section .section-mini-title {
     margin-left: 123px;
     bottom: 800px;
     font-size: 30px;
   }
-  .solar-panel-section p, .solar-panel-section .solar-panel-list{
+  .solar-panel-section p,
+  .solar-panel-section .solar-panel-list {
     width: 180px;
   }
-  .solar-panel-section .solar-panel-section-img{
+  .solar-panel-section .solar-panel-section-img {
     margin-left: -150px;
-  }  
-  .solar-panel-section .solar-panel-list{
+  }
+  .solar-panel-section .solar-panel-list {
     top: 280px;
   }
-  .solar-panel-section{
+  .solar-panel-section {
     height: 1350px;
   }
-  .river-pro-section{
+  .river-pro-section {
     height: 1500px;
   }
-  .river-pro-section .section-subtitle{
+  .river-pro-section .section-subtitle {
     margin-left: 0;
   }
-  .river-pro-section .section-sub-subtitle, .river-pro-section p{
+  .river-pro-section .section-sub-subtitle,
+  .river-pro-section p {
     top: 390px;
     margin-left: 15px;
-
   }
+  
+
+}
+
+/* M Mobile screens */
+@media screen and (max-width: 375px) {
+  
+  .products-showcase-section .products-item img{
+    width: 200px;
+    height: 200px;
+  }
+  .products-showcase-section .products-list .products-item .product-desc .section-subtitle{
+    font-size: 16px;
+  }
+  .products-showcase-section .products-list .products-item .product-desc .product-price{
+    font-size: 14px;
+  }
+  .solar-panel-section .solar-panel-section-img{
+    width: 400px;
+    margin-left: -50px;
+    margin-top: 85px; 
+  }
+  
 }
