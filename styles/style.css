@@ -773,7 +773,7 @@ p {
 /* 768x--- */
 @media screen and (max-width: 768px) {
   .container {
-    width: calc(768px - 226px);
+    width: calc(100vw - 226px);
   }
   .slider {
     aspect-ratio: 1440/990;
@@ -885,7 +885,7 @@ p {
   .media .ul-media {
     display: grid;
     position: absolute;
-    background-color: var(--header-section-color-bg);
+    background-color: var(--header-section-darker-color-bg);
     width: 100%;
     top: 82px;
     gap: 0;
@@ -898,12 +898,12 @@ p {
   }
 
   .media .ul-media .header-menu-media-element {
-    padding-right: 49%;
-    padding-left: 49%;
+    /* padding-right: 49%; */
+    /* padding-left: 49%; */
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: center;
-    background-color: var(--header-section-darker-color-bg);
+    /* background-color: var(--header-section-darker-color-bg); */
   }
   .header-hover-element:hover {
     transition: 0.3s;
@@ -911,8 +911,8 @@ p {
     color: var(--main-text-color);
   }
   .media .ul-media .social{
-    padding-right: 50%;
-    padding-left: 50%;
+    /* padding-right: 50%; */
+    /* padding-left: 50%; */
   }
   /* When input is checked the "burger menu" goes down to its original position */
   input#burger-menu:checked ~ .container .media .ul-media {
@@ -935,7 +935,7 @@ p {
 /* 425x--- */
 @media screen and (max-width: 425px) {
   .container {
-    width: calc(500px - 226px);
+    width: calc(100vw - 226px + 75px);
   }
   .delta-iframe {
     width: calc(500px - 226px);
