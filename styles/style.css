@@ -910,10 +910,6 @@ p {
     background-color: var(--light-color-bg);
     color: var(--main-text-color);
   }
-  .media .ul-media .social {
-    /* padding-right: 50%; */
-    /* padding-left: 50%; */
-  }
   /* When input is checked the "burger menu" goes down to its original position */
   input#burger-menu:checked ~ .container .media .ul-media {
     transform: translateY(0);
