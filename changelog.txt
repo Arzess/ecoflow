@@ -1,0 +1,17 @@
+01.02.2022
+
+-Added 3 new file(s)
+
+Author's notice:
+Base version of Ecoflow site for my portfolio.
+
+
+02.02.2022
+
+-Added "hamburger menu"
+-Fixed some bugs
+-Expanded adaptive design for following devices: M Mobile Screens.
+
+Author's notice:
+In this version I've made some changes to adaptive design of this site, to be precise I made an extra resolution for the M Mobile screens, plus added a hamburger menu. 
+This is an enhanced version of the ecoflow site.
