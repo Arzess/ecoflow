@@ -20,6 +20,7 @@ This is an enhanced version of the ecoflow site.
 03.02.2022
 
 -Fixed bugs on mobile devices
+-Added Adaptive resolution for following devices: Samsung S20 Ultra, Samsung S8+, S Mobile Screens.
 
 Author's notice:
-In the version 0-5 I brough changes to the adaptive design and its problem with mobile devices. 
+In the version 0-5 I brought changes to the adaptive design and its problems with mobile devices. 
