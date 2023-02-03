@@ -16,3 +16,10 @@ Base version of Ecoflow site for my portfolio.
 Author's notice:
 In this version I've made some changes to adaptive design of this site, to be precise I made an extra resolution for the M Mobile screens, plus added a hamburger menu. 
 This is an enhanced version of the ecoflow site.
+
+03.02.2022
+
+-Fixed bugs on mobile devices
+
+Author's notice:
+In the version 0-5 I brough changes to the adaptive design and its problem with mobile devices. 
