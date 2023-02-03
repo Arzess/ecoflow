@@ -775,7 +775,7 @@ p {
   .container {
     width: calc(100vw - 226px);
   }
-  
+
   .slider {
     aspect-ratio: 1440/990;
   }
@@ -861,7 +861,7 @@ p {
   .contact-section p {
     width: 275px;
   }
-  .header{
+  .header {
     position: relative;
     z-index: 9999;
   }
@@ -896,7 +896,7 @@ p {
     justify-items: center;
     /* width: 100px; */
   }
-  .overflow-container{
+  .overflow-container {
     display: flex;
     height: 89px;
     width: 100%;
@@ -1030,8 +1030,9 @@ p {
     width: auto;
   }
   .solar-panel-section .solar-panel-section-img {
-    margin-left: -150px;
-    margin-top: 60px;
+    margin-left: -95px;
+    margin-top: 120px;
+    width: 450px;
   }
   .solar-panel-section .solar-panel-list {
     top: 280px;
@@ -1050,6 +1051,8 @@ p {
   }
   .river-pro-section .outdoor-img {
     right: 15px;
+    bottom: 555px;
+    margin-top: 50px;
   }
   .contact-section .contact-form {
     width: auto;
@@ -1066,6 +1069,24 @@ p {
   .river-pro-section .section-subtitle {
     margin-left: 0;
   }
+  .products-showcase-section
+    .products-list
+    .products-item
+    .product-desc
+    .section-subtitle {
+    font-size: 22px;
+  }
+  .products-showcase-section
+    .products-list
+    .products-item
+    .product-desc
+    .product-price {
+    font-size: 18px;
+  }
+  .products-showcase-section .products-item img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 /* M Mobile screens */
@@ -1077,10 +1098,10 @@ p {
     width: 200px;
     height: 200px;
   }
-  .slider{
+  .slider {
     aspect-ratio: 1440/2500;
   }
-  .slider img{
+  .slider img {
     height: 650px;
   }
   .products-showcase-section
