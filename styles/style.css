@@ -1088,7 +1088,13 @@ p {
     height: 250px;
   }
 }
-
+/* Samsung screen 360x--- */
+@media screen and (max-width: 360px) {
+  .river-pro-section .outdoor-img{
+    margin-top: 0;
+  }
+  
+}
 /* M Mobile screens */
 @media screen and (max-width: 375px) {
   .container {
