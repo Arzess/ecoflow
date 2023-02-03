@@ -828,7 +828,7 @@ p {
   .river-pro-section .outdoor-img {
     width: 300px;
     height: 300px;
-    bottom: 500px;
+    bottom: 533px;
   }
   .river-pro-section .outdoor-img img {
     width: 700px;
@@ -1088,12 +1088,11 @@ p {
     height: 250px;
   }
 }
-/* Samsung screen 360x--- */
-@media screen and (max-width: 360px) {
-  .river-pro-section .outdoor-img{
-    margin-top: 0;
+/* Samsung S20 Ultra */
+@media screen and (max-width: 412px) {
+  .river-pro-section .outdoor-img {
+    margin-top: -12px;
   }
-  
 }
 /* M Mobile screens */
 @media screen and (max-width: 375px) {
@@ -1132,4 +1131,64 @@ p {
   .solar-panel-section .section-title {
     font-size: 45px;
   }
+  .river-pro-section .outdoor-img {
+    margin-top: 50px;
+  }
+}
+/* Samsung screen 360x--- */
+@media screen and (max-width: 360px) {
+  .slider img{
+    height: 625px;
+  }
+  .river-pro-section .outdoor-img {
+    margin-top: 0;
+  }
+}
+
+/* S Mobile Screens */
+@media screen and (max-width: 320px) {
+  .slider img{
+    height: 556px;
+  }
+  .delta-iframe {
+    width: calc(450px - 226px);
+  }
+  .delta-section img {
+    margin-left: -50px;
+  }
+  .delta-section .section-sub-subtitle {
+    margin-left: 95px;
+  }
+  .delta-section .section-mini-title {
+    margin-left: 75px;
+  }
+  .river-pro-section .section-subtitle {
+    font-size: 45px;
+  }
+  .river-pro-section {
+    height: 1900px;
+  }
+  .river-pro-section .outdoor-img {
+    width: 260px;
+    height: 260px;
+    margin-top: -100px;
+  }
+  .river-pro-section p {
+    width: 240px;
+  }
+  .river-pro-section .outdoor-img img {
+    bottom: 20px;
+    width: 600px;
+    height: 300px;
+    right: 166px;
+  }
+  .solar-panel-section .solar-panel-section-img {
+    margin-left: -90px;
+  }
+  .products-showcase-section .section-title{
+    font-size: 60px;
+  }
+  .contact-section .section-title {
+    font-size: 40px;
+}
 }
