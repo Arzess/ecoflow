@@ -949,6 +949,9 @@ p {
   .container {
     width: calc(100vw - 226px + 75px);
   }
+  .intersection-element {
+    font-size: 50px;
+  }
   .delta-iframe {
     width: calc(500px - 226px);
     height: 300px;
@@ -1006,7 +1009,7 @@ p {
     font-size: 70px;
   }
   .contact-section .section-title {
-    font-size: 50px;
+    font-size: 35px;
   }
   .contact-section .section-subtitle {
     font-size: 23px;
@@ -1046,13 +1049,13 @@ p {
   }
   .river-pro-section .section-sub-subtitle,
   .river-pro-section p {
-    top: 420px;
+    top: 550px;
     margin-left: 0px;
   }
   .river-pro-section .outdoor-img {
     right: 15px;
-    bottom: 555px;
-    margin-top: 50px;
+    bottom: 500px;
+    /* margin-top: 50px; */
   }
   .contact-section .contact-form {
     width: auto;
@@ -1137,7 +1140,7 @@ p {
 }
 /* Samsung screen 360x--- */
 @media screen and (max-width: 360px) {
-  .slider img{
+  .slider img {
     height: 625px;
   }
   .river-pro-section .outdoor-img {
@@ -1147,7 +1150,7 @@ p {
 
 /* S Mobile Screens */
 @media screen and (max-width: 320px) {
-  .slider img{
+  .slider img {
     height: 556px;
   }
   .delta-iframe {
@@ -1185,10 +1188,10 @@ p {
   .solar-panel-section .solar-panel-section-img {
     margin-left: -90px;
   }
-  .products-showcase-section .section-title{
+  .products-showcase-section .section-title {
     font-size: 60px;
   }
   .contact-section .section-title {
-    font-size: 40px;
-}
+    font-size: 35px;
+  }
 }
