@@ -132,15 +132,15 @@ blockquote,
 q {
   quotes: none;
 }
-@keyframes float-x {
+@keyframes float-y {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
   50% {
-    transform: translateX(20px);
+    transform: translateY(20px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -493,25 +493,28 @@ p {
   margin-left: 150px;
 }
 /* Intersection */
-.intersection .container .intersection-element {
-  margin: 0 auto;
-  text-align: center;
-}
-.intersection-element {
-  font-size: 80px;
-  width: auto;
-  font-family: var(--primary-font);
-  color: var(--main-text-color);
-  animation: 3s ease infinite float-x;
-}
-.intersection-element::before {
-  content: ">";
-  color: var(--main-text-color);
-}
-.intersection-element::after {
-  content: ">";
-  color: var(--main-text-color);
-}
+/* .intersection .container .intersection-element { */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+/* } */
+/* .intersection-element { */
+  /* font-size: 80px; */
+  /* transform: rotate(-90deg); */
+  /* width: auto; */
+  /* font-family: var(--primary-font); */
+  /* color: var(--main-text-color); */
+  /* animation: 3s ease infinite float-y; */
+/* } */
+/* .intersection-element::before { */
+  /* content: ">"; */
+  /* margin: 10px; */
+  /* color: var(--main-text-color); */
+/* } */
+/* .intersection-element::after { */
+  /* content: ">"; */
+  /* margin: 10px; */
+  /* color: var(--main-text-color); */
+/* } */
 
 /* Product showcase section */
 .products-showcase-section {
@@ -623,8 +626,8 @@ p {
   animation-play-state: running;
 }
 
-.float-x-animation {
-  animation: 10s ease infinite float-x;
+.float-y-animation {
+  animation: 10s ease infinite float-y;
 }
 .contact-section .contact-form h3 {
   font-size: 30px;
@@ -950,7 +953,7 @@ p {
     width: calc(100vw - 226px + 75px);
   }
   .intersection-element {
-    font-size: 50px;
+    font-size: 60px;
   }
   .delta-iframe {
     width: calc(500px - 226px);
