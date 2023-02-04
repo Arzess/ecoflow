@@ -24,3 +24,11 @@ This is an enhanced version of the ecoflow site.
 
 Author's notice:
 In the version 0-6 I brought changes to the adaptive design and its problems with mobile devices. 
+
+04.02.2022
+
+-Fixed last bug I've found on my mobile device.
+-Official site release
+
+Author's notice:
+Official site release.
