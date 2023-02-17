@@ -146,7 +146,7 @@
       <div class="section delta-section">
         <div class="container">
           <h2 id="start" class="hidden" style="text-align: center">Delta</h2>
-          <h2 class="section-title">DELTA</h2>
+          <h2 class="section-title width-auto">DELTA</h2>
           <h3 class="section-subtitle">NEVER LOSE POWER AGAIN.</h3>
           <p>
             Stay in charge of any situation with the EcoFlow DELTA. A single
@@ -158,15 +158,14 @@
             alt="delta ecoflow"
             class="delta-section-img"
           />
-          <h4 class="section-sub-subtitle">1800W</h4>
+          <h4 class="section-sub-subtitle flex flex-end">1800W</h4>
           <!-- <h4 class="section-sub-subtitle-outline">1800W</h4> -->
-          <h5 class="section-mini-title">AC OUTPUT</h5>
+          <h5 class="section-mini-title flex flex-end">AC OUTPUT</h5>
           <!-- Iframe video -->
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/uyB6HaquXvo"
             title="YouTube video player"
+            width="1100"
             frameborder="0"
             class="delta-iframe"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -175,11 +174,13 @@
         </div>
       </div>
       <div class="section river-pro-section">
-        <div class="container">
+        <div class="container flex justify-content-center flex-wrap flex-direction-column align-content-center">
           <h2 class="section-title" style="color: var(--light-text-color)">
             RIVER PRO
           </h2>
-          <h3 class="section-subtitle">HIT THE OUTDOORS</h3>
+          <div class="inner-container flex flex-wrap row-reverse align-items-center">
+          <div>
+            <h3 class="section-subtitle">HIT THE OUTDOORS</h3>
           <p>
             Take on the great outdoors with the EcoFlow RIVER Pro. This portable
             powerhouse comes in at 16.8lbs and packs a 720Wh capacity. Double up
@@ -187,35 +188,43 @@
             long haul.
           </p>
           <h4 class="section-sub-subtitle">FOR LIFE ON THE GO.</h4>
+          </div>
+          
           <div class="outdoor-img">
             <img
               src="https://drone.ua/wp-content/EcoflowUkraine/images/image69.jpg"
               alt="outdoor image ecoflow river pro"
             />
           </div>
+          </div>
         </div>
       </div>
       <div class="section solar-panel-section">
-        <div class="container">
+        <div class="container flex flex-direction-column flex-wrap align-content-center">
           <h2 hidden>Portable Solar Panels</h2>
           <h2 class="section-title">ECOFLOW 160W PORTABLE SOLAR PANEL</h2>
-          <p>
-            Be in charge wherever you are. The EcoFlow 160W Solar Panel delivers
-            ample and green power on the go.
-          </p>
-          <ul class="solar-panel-list">
-            <li class="solar-panel-list-element">Portable & self-supporting</li>
-            <li class="solar-panel-list-element">Smart solar power</li>
-            <li class="solar-panel-list-element">
-              Durable with IP68 waterproof rating
-            </li>
-            <li class="solar-panel-list-element">One-piece folding design</li>
-          </ul>
+          <div class="inner-container flex flex-wrap flex-direction-row align-items-center justify-content-space-around">
+            <div class="inner-text-container flex flex-direction-column justify-content-center">
+              <p>
+                Be in charge wherever you are. The EcoFlow 160W Solar Panel delivers
+                ample and green power on the go.
+              </p>
+              <ul class="solar-panel-list">
+                <li class="solar-panel-list-element">Portable & self-supporting</li>
+                <li class="solar-panel-list-element">Smart solar power</li>
+                <li class="solar-panel-list-element">
+                  Durable with IP68 waterproof rating
+                </li>
+                <li class="solar-panel-list-element">One-piece folding design</li>
+              </ul>
+            </div>
           <img
             src="https://cdn.shopify.com/s/files/1/1996/9707/products/ecoflow-ecoflow-160w-portable-solar-panel-30045747544137_2000x.png?v=1667530378"
             alt="ecoflow portable solar panel 160w"
-            class="solar-panel-section-img"
+            class="solar-panel-section-img flex"
           />
+          </div>
+          
         </div>
       </div>
       <!-- <div class="section intersection"> -->
@@ -224,11 +233,11 @@
         <!-- </div> -->
       </div>
       <div class="section products-showcase-section">
-        <div class="container">
+        <div class="container height-100 flex flex-direction-column justify-content-center products-gap">
           <h2 id="product-section" hidden>Product section</h2>
           <h2 class="section-title">OUR PRODUCTS</h2>
           <!-- Products list -->
-          <ul class="products-list">
+          <ul class="products-list ">
             <li class="products-item">
               <a
                 href="https://us.ecoflow.com/collections/delta-series/products/delta-max-portable-power-station"
@@ -285,41 +294,45 @@
         </div>
       </div>
       <div class="section contact-section">
-        <div class="container">
+        <div class="container flex flex-wrap flex-direction-column align-content-center">
           <h2 class="section-title">HAVE YOU GOT ANY QUESTIONS?</h2>
-          <h3 class="section-subtitle">
-            We will accompany you in any question!
-          </h3>
-          <p>
-            You can either fill in this form on the right, or write us an
-            e-mail. We are looking forward to seeing your feedback.
-          </p>
-          <!-- Form -->
-          <div class="contact-form">
-            <div class="form-container">
-              <h3 class="section-subtitle-copy">FORM</h3>
+          <div class="inner-container flex flex-wrap flex-direction-row contact-form-gap justify-content-space-around">
+            <div class="inner-text-container flex contact-gap flex-direction-column">
+            <h3 class="section-subtitle">
+              We will accompany you in any question!
+            </h3>
+            <p>
+              You can either fill in this form on the right, or write us an
+              e-mail. We are looking forward to seeing your feedback.
+            </p>
             </div>
-            <form action="" method="get" class="form">
-              <input type="text" placeholder="Your name.." class="name-input" />
-              <input
-                type="text"
-                placeholder="Your surname.."
-                class="surname-input"
-              />
-              <input
-                type="e-mail"
-                placeholder="example@domain.com"
-                class="e-mail-input"
-              />
-              <textarea
-                class="textarea-input"
-                cols="10"
-                rows="6"
-                placeholder="Your message"
-              ></textarea>
-              <input type="submit" value="OK" class="submit-input" />
-            </form>
+            <!-- Form -->
+            <div class="contact-form">
+          <div class="form-container">
+            <h3 class="section-subtitle-copy">FORM</h3>
           </div>
+          <form action="" method="get" class="form">
+            <input type="text" placeholder="Your name.." class="name-input" />
+            <input
+              type="text"
+              placeholder="Your surname.."
+              class="surname-input"
+            />
+            <input
+              type="e-mail"
+              placeholder="example@domain.com"
+              class="e-mail-input"
+            />
+            <textarea
+              class="textarea-input"
+              cols="10"
+              rows="6"
+              placeholder="Your message"
+            ></textarea>
+            <input type="submit" value="OK" class="submit-input" />
+          </form>
+            </div>
+        </div>
         </div>
         <video id="ecoflow-bg-video" autoplay muted loop>
           <source src="./videos/eocflow-video-bg.mp4" type="video/mp4" />
@@ -328,7 +341,7 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <div class="container container-footer">
+      <div class="container container-footer" style="display: flex;">
         <!-- Ecoflow logo -->
         <nav class="nav">
         <!-- Ecoflow logo -->
@@ -350,6 +363,9 @@
             </svg>
           </a>
         </nav>
+        <div class="copyright" style="margin-left: auto;">
+          <a href="https://github.com/Arzess" class="link" target="_blank" style="color: var(--light-text-color);"><h3 class="section-sub-subtitle" style="font-family: var(--secondary-font);">Arsenii Malyshko 2023 &copy;</h3></a>
+        </div>
       </div>
     </footer>
   </body>

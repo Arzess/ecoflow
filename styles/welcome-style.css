@@ -133,7 +133,32 @@ q {
   quotes: none;
 }
 /* Main */
-.container {
-    width: 1226px;
-    margin-left: 50%;
-  }
+.container .container-list{
+    gap: 40px;
+}
+.link{
+    text-decoration: none;
+}
+.welcome .container{
+    margin-top: 20%;
+}
+.welcome .section-title{
+    font-family: var(--primary-font);
+}
+.welcome .section-subtitle{
+    font-family: var(--secondary-font);
+    color: var(--main-text-color);
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.welcome .link:hover{
+    text-decoration: underline;
+    color: var(--main-text-color);
+}
+.container .container-list{
+    list-style-type: none;
+}
+
+
