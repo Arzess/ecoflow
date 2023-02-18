@@ -135,15 +135,18 @@ q {
 /* Main */
 .container .container-list{
     gap: 40px;
+    position: relative;
+    bottom: 0;
 }
 .link{
     text-decoration: none;
 }
 .welcome .container{
-    margin-top: 20%;
+margin-top: 20vw;
 }
 .welcome .section-title{
     font-family: var(--primary-font);
+    max-width: 800px;
 }
 .welcome .section-subtitle{
     font-family: var(--secondary-font);

@@ -295,7 +295,7 @@ p {
   color: var(--light-text-color);
   font-family: var(--primary-font);
   font-size: 80px;
-  max-width: 600px;
+  max-width: 580px;
   /* filter: drop-shadow(0px 0px 11px 0px #444); */
   text-align: left;
   left: 0;
@@ -1164,7 +1164,7 @@ p {
     width: 250px;
     height: 250px;
   }
-  .footer .copyright .link{
+  .footer .copyright .link {
     font-size: 13px !important;
     width: 50px;
   }
@@ -1175,8 +1175,8 @@ p {
     margin-top: -12px;
   }
   .hero .hero-title {
-    font-size: 45px;
-    width: 300px;
+    font-size: 35px;
+    width: 250px;
   }
   .solar-panel-section .section-title {
     font-size: 50px;
@@ -1186,6 +1186,11 @@ p {
   }
   .products-showcase-section {
     height: calc(1191px + 450px);
+  }
+  .hero-button {
+    padding: 20px 40px 20px 40px;
+    font-size: 15px;
+    border-radius: 20px;
   }
 }
 /* M Mobile screens */
@@ -1232,10 +1237,6 @@ p {
   .river-pro-section .outdoor-img {
     margin-top: 0;
   }
-  .hero-button {
-    padding: 25px 45px 25px 45px;
-    font-size: 15px;
-  }
   .river-pro-section {
     height: calc(1191px + 460px + 50px);
   }
@@ -1277,5 +1278,38 @@ p {
   }
   .solar-panel-section .inner-container {
     transform: scale(0.9);
+  }
+}
+
+/* Height adjustments */
+@media screen and (max-height: 636px) {
+  .hero-title {
+    font-size: 40px;
+    max-width: 300px;
+  }
+  .hero-button {
+    padding: 20px 40px 20px 40px;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .hero-button {
+    margin-top: 10px;
+    font-size: 10px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 15px;
+  }
+  .hero-title {
+    font-size: 30px;
+    max-width: 200px;
+  }
+  .slider-nav .slider-link {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  .slider-nav {
+    bottom: 45px;
   }
 }
