@@ -313,7 +313,7 @@ p {
   position: relative;
   max-width: 100%;
   margin: 0 auto;
-  bottom: calc(100vh - 80px);
+  bottom: calc(100vh - 10px);
 }
 .slider {
   display: flex;
@@ -1073,9 +1073,6 @@ p {
     width: calc(500px - 226px);
     height: 500px;
     min-width: 0;
-  }
-  .hero {
-    height: 1191px;
   }
   .hero .hero-title {
     font-size: 45px;
