@@ -165,58 +165,58 @@ input#burger-menu {
 .link {
   text-decoration: none;
 }
-.width-auto{
+.width-auto {
   width: auto;
 }
 .flex {
   display: flex;
 }
-.height-100{
+.height-100 {
   height: 100%;
 }
-.flex-direction-column{
+.flex-direction-column {
   flex-direction: column;
 }
-.flex-direction-row{
+.flex-direction-row {
   flex-direction: row;
 }
-.justify-content-center{
+.justify-content-center {
   justify-content: center;
 }
-.justify-content-space-around{
+.justify-content-space-around {
   justify-content: space-around;
 }
 .flex-end {
-  align-items: flex-end;;
+  align-items: flex-end;
 }
-.justify-content-flex-end{
+.justify-content-flex-end {
   justify-content: flex-end;
 }
-.flex-start{
+.flex-start {
   align-items: flex-start;
 }
-.align-content-center{
+.align-content-center {
   align-content: center;
 }
-.flex-wrap{
+.flex-wrap {
   flex-wrap: wrap;
 }
-.align-items-center{
+.align-items-center {
   align-items: center;
 }
-.products-gap{
+.products-gap {
   gap: 50px;
 }
-.contact-gap{
+.contact-gap {
   gap: 20px;
 }
-.contact-form-gap{
+.contact-form-gap {
   gap: 200px;
 }
-.gap-70px{
+.gap-70px {
   gap: 70px;
 }
-.row-reverse{
+.row-reverse {
   flex-direction: row-reverse;
 }
 p {
@@ -430,10 +430,10 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.delta-section .inner-container{
+.delta-section .inner-container {
   gap: 50px;
 }
-.delta-section .inner-section-container{
+.delta-section .inner-section-container {
   gap: 200px;
 }
 .delta-section .section-sub-subtitle {
@@ -463,7 +463,7 @@ p {
   padding-top: 200px;
   height: 1290px;
 }
-.river-pro-section .inner-container{
+.river-pro-section .inner-container {
   gap: 100px;
 }
 .delta-iframe {
@@ -520,14 +520,16 @@ p {
   letter-spacing: 0.1em;
   width: 400px;
 }
-.river-pro-section .section-subtitle, .river-pro-section .section-sub-subtitle, .river-pro-section p{
+.river-pro-section .section-subtitle,
+.river-pro-section .section-sub-subtitle,
+.river-pro-section p {
   /* margin-left: clamp(20vw, 50vw, 70vw); */
 }
 /* Solar panel section */
 .solar-panel-section {
   height: 1191px;
 }
-.solar-panel-section .section-title{
+.solar-panel-section .section-title {
   max-width: 1000px;
 }
 .solar-panel-section .solar-panel-section-img {
@@ -540,7 +542,7 @@ p {
   width: 400px;
   margin-top: 30px;
 }
-.solar-panel-section .align-items-center{
+.solar-panel-section .align-items-center {
   align-items: unset;
 }
 .solar-panel-section .solar-panel-list .solar-panel-list-element {
@@ -551,7 +553,8 @@ p {
 .solar-panel-section p {
   width: 450px;
 }
-.solar-panel-section p, .solar-panel-section .solar-panel-list{
+.solar-panel-section p,
+.solar-panel-section .solar-panel-list {
   width: auto;
   max-width: 400px;
 }
@@ -764,7 +767,7 @@ p {
   .products-showcase-section .products-list {
     gap: 49px;
   }
-  .delta-section .inner-section-container{
+  .delta-section .inner-section-container {
     gap: 30px;
   }
 }
@@ -797,20 +800,20 @@ p {
   .delta-iframe {
     width: calc(100vw - 226px);
   }
-  .river-pro-section .row-reverse{
+  .river-pro-section .row-reverse {
     flex-direction: column;
   }
   .solar-panel-section p,
   .solar-panel-section .solar-panel-list {
     margin: 0 auto;
   }
-  .solar-panel-list{
+  .solar-panel-list {
     top: 20px;
   }
-  .solar-panel-section .flex-direction-row{
+  .solar-panel-section .flex-direction-row {
     flex-direction: column;
   }
-  .solar-panel-section .align-items-center{
+  .solar-panel-section .align-items-center {
     align-items: center;
   }
   .solar-panel-section .solar-panel-section-img {
@@ -820,21 +823,21 @@ p {
     margin-bottom: 30px;
     width: auto;
   }
-  .river-pro-section{
+  .river-pro-section {
     height: 1786px;
     /* padding-top: 0; */
     padding-bottom: 0;
   }
-  .contact-section .flex-direction-row{
+  .contact-section .flex-direction-row {
     flex-direction: column;
   }
-  .contact-section .inner-container{
+  .contact-section .inner-container {
     align-items: center;
   }
-  .contact-section .contact-form-gap{
+  .contact-section .contact-form-gap {
     gap: 100px;
   }
-  .contact-section{
+  .contact-section {
     height: 1786px;
   }
 }
@@ -876,13 +879,13 @@ p {
     height: 580px;
     margin-top: 0;
   }
-  .products-showcase-section{
+  .products-showcase-section {
     height: 1786px;
   }
   .products-showcase-section .container {
     width: calc(100vw - 226px);
   }
-  .solar-panel-section .solar-panel-section-img{
+  .solar-panel-section .solar-panel-section-img {
     width: 500px;
     bottom: -10vw;
     max-width: -webkit-fill-available;
@@ -895,14 +898,15 @@ p {
     width: 70vw;
     margin: 0 auto;
   }
-  .solar-panel-section p, .solar-panel-section .solar-panel-list {
+  .solar-panel-section p,
+  .solar-panel-section .solar-panel-list {
     top: 10vw;
     position: relative;
-}
-  .solar-panel-section .solar-panel-list{
+  }
+  .solar-panel-section .solar-panel-list {
     top: 13vw;
   }
-  .contact-section{
+  .contact-section {
     height: 1965px;
   }
   /* Hamburger menu */
@@ -984,33 +988,33 @@ p {
   }
 }
 @media screen and (max-width: 780px) {
-  .products-showcase-section{
+  .products-showcase-section {
     height: 1786px;
   }
-  .river-pro-section .outdoor-img{
+  .river-pro-section .outdoor-img {
     width: 400px;
     height: 400px;
   }
-  .river-pro-section .outdoor-img img{
+  .river-pro-section .outdoor-img img {
     width: 900px;
     height: 450px;
     right: 246px;
-
   }
-  .river-pro-section .section-subtitle, .river-pro-section p, .river-pro-section .section-sub-subtitle{
+  .river-pro-section .section-subtitle,
+  .river-pro-section p,
+  .river-pro-section .section-sub-subtitle {
     width: 350px;
   }
-  .river-pro-section .section-subtitle{
+  .river-pro-section .section-subtitle {
     font-size: 60px;
   }
-  .river-pro-section .section-sub-subtitle{
+  .river-pro-section .section-sub-subtitle {
     font-size: 50px;
     width: 300px;
   }
-  .contact-section .contact-form{
+  .contact-section .contact-form {
     width: 350px;
   }
-
 }
 
 @media screen and (max-width: 700px) {
@@ -1020,7 +1024,7 @@ p {
     width: calc(85vw);
     left: 0;
   }
-  .products-showcase-section .section-title{
+  .products-showcase-section .section-title {
     width: auto;
     font-size: 60px;
   }
@@ -1032,27 +1036,26 @@ p {
     justify-content: center;
     bottom: 100px;
   }
-  .contact-section .section-title{
+  .contact-section .section-title {
     font-size: calc(30px + 4vw);
     min-width: 250px;
   }
-  .contact-section .section-subtitle{
+  .contact-section .section-subtitle {
     font-size: 40px;
     width: 350px;
   }
-  .contact-section p{
+  .contact-section p {
     width: 350px;
   }
-  .contact-section .form{
+  .contact-section .form {
     width: 350px;
   }
-  .contact-section{
+  .contact-section {
     height: 1548px;
   }
- .delta-iframe{
-  min-width: 340px;
- }
-  
+  .delta-iframe {
+    min-width: 340px;
+  }
 }
 /* L Mobile screens */
 /* 425x--- */
@@ -1060,7 +1063,7 @@ p {
   .container {
     width: calc(100vw - 226px + 75px);
   }
-  .solar-panel-section .container{
+  .solar-panel-section .container {
     transform: scale(0.8);
   }
   .intersection-element {
@@ -1124,11 +1127,11 @@ p {
     padding-bottom: 50px;
     padding-top: 50px;
   }
-  
-  .river-pro-section .inner-container{
+
+  .river-pro-section .inner-container {
     transform: scale(0.8);
   }
-  
+
   .river-pro-section .section-subtitle {
     margin-left: 0;
   }
@@ -1219,7 +1222,7 @@ p {
   .delta-section p {
     width: auto;
   }
-  .contact-section .contact-form{
+  .contact-section .contact-form {
     transform: scale(0.8);
   }
 }
@@ -1271,7 +1274,7 @@ p {
     font-size: 35px;
     width: 200px;
   }
-  .solar-panel-section .inner-container{
+  .solar-panel-section .inner-container {
     transform: scale(0.9);
   }
 }
