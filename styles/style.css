@@ -1164,6 +1164,11 @@ p {
     width: 250px;
     height: 250px;
   }
+  .footer .copyright .link{
+    font-size: 13px !important;
+    width: 50px;
+    display: flex;
+  }
 }
 /* Samsung S20 Ultra */
 @media screen and (max-width: 412px) {
