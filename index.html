@@ -109,7 +109,7 @@
     <main class="main">
       <!-- Hero section -->
       <div class="hero section">
-        <div class="container">
+        <div class="container flex flex-direction-column justify-content-center flex-start height-100">
           <h1 class="hero-title">POWER NEVER HAS BEEN THIS EASY</h1>
           <button class="hero-button">
             <a href="#start" class="hero-button-link link">Learn more</a>
@@ -144,23 +144,32 @@
         </div>
       </div>
       <div class="section delta-section">
-        <div class="container">
+        <div class="container flex flex-direction-column flex-wrap justify-content-center">
           <h2 id="start" class="hidden" style="text-align: center">Delta</h2>
           <h2 class="section-title width-auto">DELTA</h2>
-          <h3 class="section-subtitle">NEVER LOSE POWER AGAIN.</h3>
-          <p>
-            Stay in charge of any situation with the EcoFlow DELTA. A single
-            unit packs a 1.2kWh capacity, perfect for powering mutiple
-            essentials devices for hours on end during a blackout.
-          </p>
+          <div class="inner-section-container flex flex-wrap flex-direction-column">
+            <div class="inner-container flex flex-wrap flex-direction-row justify-content-center">
+           <div class="inner-text-container justify-content-center flex flex-direction-column gap-70px">
+              <h3 class="section-subtitle">NEVER LOSE POWER AGAIN.</h3>
+              <p>
+                Stay in charge of any situation with the EcoFlow DELTA. A single
+                unit packs a 1.2kWh capacity, perfect for powering mutiple
+                essentials devices for hours on end during a blackout.
+            </p>
+           </div>
           <img
             src="https://cdn.shopify.com/s/files/1/1996/9707/products/ecoflow-ecoflow-delta-max-portable-power-station-30045804953673_1066x.png?v=1667531449"
             alt="delta ecoflow"
             class="delta-section-img"
           />
-          <h4 class="section-sub-subtitle flex flex-end">1800W</h4>
-          <!-- <h4 class="section-sub-subtitle-outline">1800W</h4> -->
-          <h5 class="section-mini-title flex flex-end">AC OUTPUT</h5>
+          
+          
+          </div>
+          <div class="inner-text-additional-container flex flex-direction-column flex-end justify-content-space-around flex-wrap align-content-center">
+            <h4 class="section-sub-subtitle">1800W</h4>
+            <!-- <h4 class="section-sub-subtitle-outline">1800W</h4> -->
+            <h5 class="section-mini-title">AC OUTPUT</h5> 
+          </div>
           <!-- Iframe video -->
           <iframe
             src="https://www.youtube.com/embed/uyB6HaquXvo"
@@ -171,6 +180,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
+          </div>
         </div>
       </div>
       <div class="section river-pro-section">
@@ -311,7 +321,7 @@
           <div class="form-container">
             <h3 class="section-subtitle-copy">FORM</h3>
           </div>
-          <form action="" method="get" class="form">
+          <form action="welcome.html" method="get" class="form">
             <input type="text" placeholder="Your name.." class="name-input" />
             <input
               type="text"
