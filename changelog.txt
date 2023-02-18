@@ -32,3 +32,17 @@ In the version 0-6 I brought changes to the adaptive design and its problems wit
 
 Author's notice:
 Official site release.
+
+17.02.2022
+
+-Layout was changed.
+-Adaptive design fixes were made.
+
+
+18.02.2022
+
+-Colossal changes to the site were brought.
+-Responsive Design
+
+Author's notice:
+I changed almost everything and made it look more cleaner and better, also I enchanced the adaptive design to the perfection, and made it responsive design.
