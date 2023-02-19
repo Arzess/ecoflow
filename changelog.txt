@@ -1,4 +1,4 @@
-01.02.2022
+01.02.2023
 
 -Added 3 new file(s)
 
@@ -6,7 +6,7 @@ Author's notice:
 Base version of Ecoflow site for my portfolio.
 
 
-02.02.2022
+02.02.2023
 
 -Added "hamburger menu"
 -Fixed some bugs
@@ -17,7 +17,7 @@ Author's notice:
 In this version I've made some changes to adaptive design of this site, to be precise I made an extra resolution for the M Mobile screens, plus added a hamburger menu. 
 This is an enhanced version of the ecoflow site.
 
-03.02.2022
+03.02.2023
 
 -Fixed bugs on mobile devices
 -Added Adaptive resolution for following devices: Samsung S20 Ultra, Samsung S8+, S Mobile Screens.
@@ -25,7 +25,7 @@ This is an enhanced version of the ecoflow site.
 Author's notice:
 In the version 0-6 I brought changes to the adaptive design and its problems with mobile devices. 
 
-04.02.2022
+04.02.2023
 
 -Fixed last bug I've found on my mobile device.
 -Official site release
@@ -33,16 +33,22 @@ In the version 0-6 I brought changes to the adaptive design and its problems wit
 Author's notice:
 Official site release.
 
-17.02.2022
+17.02.2023
 
 -Layout was changed.
 -Adaptive design fixes were made.
 
 
-18.02.2022
+18.02.2023
 
 -Colossal changes to the site were brought.
 -Responsive Design
 
 Author's notice:
 I changed almost everything and made it look more cleaner and better, also I enchanced the adaptive design to the perfection, and made it responsive design.
+
+19.02.2023
+
+-Form has been enchanced. That is being said, form validation with validation mark were brought.
+-Small changes were made.
+-Sprites and animation of them were made.
