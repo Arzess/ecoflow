@@ -216,7 +216,7 @@ input#burger-menu {
 .gap-70px {
   gap: 70px;
 }
-.gap-50px{
+.gap-50px {
   gap: 50px;
 }
 .row-reverse {
@@ -434,26 +434,26 @@ p {
   padding-bottom: 100px;
 }
 /* Delta icon stroke effect */
-.delta-icon-stroke{
+.delta-icon-stroke {
   position: absolute;
 }
-.delta-icon-shadow{
+.delta-icon-shadow {
   filter: drop-shadow(0px 0px 10px rgb(40 79 182 / 0.8));
 }
-.delta-icon-stroke .icon-path{
-  stroke:rgb(39, 79, 182);
+.delta-icon-stroke .icon-path {
+  stroke: rgb(39, 79, 182);
   stroke-width: 0.5;
   stroke-dasharray: 100, 500;
-  stroke-dashoffset: 0; 
+  stroke-dashoffset: 0;
 }
-.delta-icon-animation{
+.delta-icon-animation {
   animation: stroke-animation 3s infinite linear reverse;
 }
-@keyframes stroke-animation{
-  0%{
+@keyframes stroke-animation {
+  0% {
     stroke-dashoffset: 0;
   }
-  100%{
+  100% {
     stroke-dashoffset: 300;
   }
 }
@@ -512,7 +512,7 @@ p {
   position: relative;
 }
 /* Svg animation */
-@keyframes leaf-wiggle{
+@keyframes leaf-wiggle {
   0% {
     offset-distance: 0%;
   }
@@ -521,13 +521,13 @@ p {
   }
 }
 /* Svg */
-.river-icon{
-  offset-path: path('M -18 31 s 54 11 102 -3 s 82 -3 114 0');
+.river-icon {
+  offset-path: path("M -18 31 s 54 11 102 -3 s 82 -3 114 0");
 }
-.river-icon-animation{
+.river-icon-animation {
   animation: leaf-wiggle 3s ease-in-out infinite alternate;
 }
-.vice-versa{
+.vice-versa {
   transform: rotate(180deg);
 }
 .river-pro-section .outdoor-img {
@@ -567,6 +567,7 @@ p {
 /* Solar panel section */
 .solar-panel-section {
   min-height: 1300px;
+  padding-top: 100px;
 }
 .solar-panel-section .section-title {
   max-width: 1000px;
@@ -583,15 +584,15 @@ p {
   margin-top: 30px;
 }
 /* Solar sprite */
-.solar-icon-animation{
+.solar-icon-animation {
   animation: sun-rotation 5s infinite linear;
 }
 /* Solar sprite animation */
 @keyframes sun-rotation {
-  0%{
+  0% {
     transform: rotate(0deg);
-  }  
-  100%{
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -683,7 +684,8 @@ p {
   padding-right: 15px;
   max-width: 200px;
 }
-.products-item:hover, .products-item:focus{
+.products-item:hover,
+.products-item:focus {
   filter: drop-shadow(0px 0px 15px rgb(0 0 0 / 0.5));
   transition: 0.3s;
 }
@@ -724,7 +726,9 @@ p {
 .contact-section .section-subtitle {
   margin-top: 150px;
 }
-
+.contact-section .section-title{
+  max-width: 900px;
+}
 .contact-section .contact-form {
   position: relative;
   max-width: 400px;
@@ -773,16 +777,17 @@ p {
   filter: drop-shadow(5px 5px 5px var(--shadow-bg-color));
   border: 0;
 }
-.validation-mark{
+
+.validation-mark {
   display: none;
   position: absolute;
   top: 277px;
   left: 350px;
 }
-.contact-section .contact-form .e-mail-input:invalid{
+.contact-section .contact-form .e-mail-input:invalid {
   border: 1px solid rgb(176, 18, 18);
 }
-.contact-section .contact-form .e-mail-input:valid + .validation-mark{
+.contact-section .contact-form .e-mail-input:valid + .validation-mark {
   display: flex;
 }
 .form {
@@ -805,8 +810,22 @@ p {
   width: 450px;
   color: var(--main-text-color);
 }
-.contact-section .contact-form .form label {
-  margin: 3px;
+.form label{
+  position: absolute;
+  left: 20px;
+}
+/* Labels */
+label[for="name-input-label"]{
+  top: 80px;
+}
+label[for="surname-input-label"]{
+  top: 160px;
+}
+label[for="e-mail-input-label"]{
+  top: 240px;
+}
+label[for="textarea-input-label"]{
+  top: 320px;
 }
 .submit-input {
   color: var(--main-text-color);
@@ -1085,10 +1104,9 @@ p {
   .contact-section .contact-form {
     width: 350px;
   }
-  .validation-mark{
+  .validation-mark {
     left: 300px;
   }
-
 }
 
 @media screen and (max-width: 700px) {

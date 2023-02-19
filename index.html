@@ -342,27 +342,35 @@
             <h3 class="section-subtitle-copy">FORM</h3>
           </div>
           <form action="welcome.html" method="get" class="form">
-            <input type="text" placeholder="Your name.." class="name-input" pattern="[A-Za-z]{1,20}" />
+            <label for="name-input-label">Name</label>
+            <input type="text" id="name-input-label" placeholder="Your name.." class="name-input" pattern="[A-Za-z]{1,20}" />
+            <label for="surname-input-label">Surname</label>
             <input
               type="text"
+              id="surname-input-label"
               placeholder="Your surname.."
               class="surname-input"
               pattern="[A-Za-z]{1,20}"
             />
+            <label for="e-mail-input-label">E-mail</label>
             <input
               type="e-mail"
               placeholder="example@domain.com"
+              id="e-mail-input-label"
               class="e-mail-input"
               required
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
+            <!-- Validation mark -->
             <svg class="validation-mark" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
               <path fill="rgb(54, 147, 61)" d="M13.5 2l-7.5 7.5-3.5-3.5-2.5 2.5 6 6 10-10z"></path>
             </svg>
+            <label for="textarea-input-label">Message</label>
             <textarea
               class="textarea-input"
               cols="10"
               rows="6"
+              id="textarea-input-label"
               placeholder="Your message"
             ></textarea>
             <input type="submit" value="OK" class="submit-input" />
