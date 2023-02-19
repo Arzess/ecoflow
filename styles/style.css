@@ -216,6 +216,9 @@ input#burger-menu {
 .gap-70px {
   gap: 70px;
 }
+.gap-50px{
+  gap: 50px;
+}
 .row-reverse {
   flex-direction: row-reverse;
 }
@@ -430,6 +433,30 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+/* Delta icon stroke effect */
+.delta-icon-stroke{
+  position: absolute;
+}
+.delta-icon-shadow{
+  filter: drop-shadow(0px 0px 10px rgb(40 79 182 / 0.8));
+}
+.delta-icon-stroke .icon-path{
+  stroke:rgb(39, 79, 182);
+  stroke-width: 0.5;
+  stroke-dasharray: 100, 500;
+  stroke-dashoffset: 0; 
+}
+.delta-icon-animation{
+  animation: stroke-animation 3s infinite linear reverse;
+}
+@keyframes stroke-animation{
+  0%{
+    stroke-dashoffset: 0;
+  }
+  100%{
+    stroke-dashoffset: 300;
+  }
+}
 .delta-section .inner-container {
   gap: 50px;
 }
@@ -446,7 +473,6 @@ p {
   color: var(--description-text-color);
   font-size: 40px;
 }
-
 .delta-section .section-sub-subtitle-outline {
   -webkit-text-fill-color: transparent;
   position: absolute;
@@ -460,7 +486,7 @@ p {
 .river-pro-section {
   background-color: var(--header-section-color-bg);
   padding-bottom: 200px;
-  padding-top: 200px;
+  padding-top: 100px;
   height: 1290px;
 }
 .river-pro-section .inner-container {
@@ -485,7 +511,25 @@ p {
   top: 30px;
   position: relative;
 }
-
+/* Svg animation */
+@keyframes leaf-wiggle{
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+/* Svg */
+.river-icon{
+  offset-path: path('M -18 31 s 54 11 102 -3 s 82 -3 114 0');
+}
+.river-icon-animation{
+  animation: leaf-wiggle 3s ease-in-out infinite alternate;
+}
+.vice-versa{
+  transform: rotate(180deg);
+}
 .river-pro-section .outdoor-img {
   width: 500px;
   height: 500px;
@@ -520,17 +564,13 @@ p {
   letter-spacing: 0.1em;
   width: 400px;
 }
-.river-pro-section .section-subtitle,
-.river-pro-section .section-sub-subtitle,
-.river-pro-section p {
-  /* margin-left: clamp(20vw, 50vw, 70vw); */
-}
 /* Solar panel section */
 .solar-panel-section {
-  height: 1191px;
+  min-height: 1300px;
 }
 .solar-panel-section .section-title {
   max-width: 1000px;
+  margin-bottom: 0;
 }
 .solar-panel-section .solar-panel-section-img {
   width: 800px;
@@ -541,6 +581,19 @@ p {
   position: relative;
   width: 400px;
   margin-top: 30px;
+}
+/* Solar sprite */
+.solar-icon-animation{
+  animation: sun-rotation 5s infinite linear;
+}
+/* Solar sprite animation */
+@keyframes sun-rotation {
+  0%{
+    transform: rotate(0deg);
+  }  
+  100%{
+    transform: rotate(360deg);
+  }
 }
 .solar-panel-section .align-items-center {
   align-items: unset;
@@ -630,6 +683,10 @@ p {
   padding-right: 15px;
   max-width: 200px;
 }
+.products-item:hover, .products-item:focus{
+  filter: drop-shadow(0px 0px 15px rgb(0 0 0 / 0.5));
+  transition: 0.3s;
+}
 .products-showcase-section
   .products-list
   .products-item
@@ -705,6 +762,7 @@ p {
 .contact-section .contact-form .form input {
   margin: 20px;
   padding: 10px;
+  height: 40px;
   filter: drop-shadow(5px 5px 5px var(--shadow-bg-color));
   border-radius: 4px;
   border: 0;
@@ -714,6 +772,18 @@ p {
   padding: 10px;
   filter: drop-shadow(5px 5px 5px var(--shadow-bg-color));
   border: 0;
+}
+.validation-mark{
+  display: none;
+  position: absolute;
+  top: 277px;
+  left: 350px;
+}
+.contact-section .contact-form .e-mail-input:invalid{
+  border: 1px solid rgb(176, 18, 18);
+}
+.contact-section .contact-form .e-mail-input:valid + .validation-mark{
+  display: flex;
 }
 .form {
   padding-top: 30px;
@@ -824,7 +894,7 @@ p {
     width: auto;
   }
   .river-pro-section {
-    height: 1786px;
+    height: 1900px;
     /* padding-top: 0; */
     padding-bottom: 0;
   }
@@ -1015,6 +1085,10 @@ p {
   .contact-section .contact-form {
     width: 350px;
   }
+  .validation-mark{
+    left: 300px;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
